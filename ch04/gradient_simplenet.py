@@ -8,7 +8,7 @@ from common.gradient import numerical_gradient
 
 class simpleNet:
     def __init__(self):
-        self.W = np.random.randn(2,3)  # 用高斯分布（即标准正态分布）进行初始化，2行3列
+        self.W = np.random.randn(2,3)  # 用高斯分布（即正态分布）进行初始化，2行3列
 
     def predict(self, x):
         return np.dot(x, self.W)
